@@ -1,3 +1,5 @@
+**!! https://www.techthoughts.info/learn-powershell-series/ !! serie riguardante powershell molto utile**
+
 Aprire Windows Powershell ISE (x86) come Amministratore, quindi tasto destro e --> "Esegui come Amministratore".
 
 A questo punto, aprire un nuovo script e salvarlo con <nome-script.ps1>.
@@ -10,6 +12,19 @@ Da <https://learn.microsoft.com/en-us/training/modules/introduction-to-powershel
 
 PowerShell Documentation: https://docs.microsoft.com/en-us/powershell/
 PowerShell Documentation at GitHub: https://github.com/PowerShell/PowerShell/tree/master/docs/learning-powershell
+
+**Alcuni termini importanti per powershell:**
+- Un cmdlet è un'utilità della riga di comando nativa di PowerShell. Questi esistono solo all'interno di PowerShell e sono scritti in un linguaggio .NET Framework come C#. IL
+word cmdlet è univoco per PowerShell, quindi se lo aggiungi alle parole chiave di ricerca su
+Google o Bing, i risultati ottenuti saranno principalmente legati a PowerShell.
+
+- Una funzione può essere simile a un cmdlet, ma anziché essere scritta in .NET
+linguaggio, le funzioni sono scritte nel linguaggio di scripting di PowerShell.
+- Un workflow è un tipo speciale di funzione che si collega all'esecuzione del flusso di lavoro di PowerShell.
+- Un'applicazione è qualsiasi tipo di eseguibile esterno, comprese le utilità della riga di comando come Ping e Ipconfig.
+- Command è il termine generico che usiamo per riferirci a uno o tutti i precedenti
+termini.
+- Un alias è una scorciatoia per un comando
 
 
  <img width="855" alt="315228560-ea717d46-a4c4-4cf5-8cff-004a0a05c195" src="https://github.com/ginasav/Powershell-script/assets/132621166/b558de34-9f7f-46ba-b5e9-7d2f4145a98d">
@@ -47,8 +62,15 @@ AllSigned: Solo gli script firmati da un autore fidato.
  
 Set-ExecutionPolicy <name_of_the_execution_policy> 
  
-How to change permission to writeable for .ps1
- ``` 
+ ```
+
+**Struttura per i comandi in powershell**
+
+![image](https://github.com/ginasav/Powershell-script/assets/132621166/1f456bb3-6468-47c3-98ad-11a08893af3f)
+
+Possiamo anche richiedere aiuto a powershell se ci troviamo in difficoltà con _get-help -examples_
+
+
 Per le variabili esse vengono assegnate come in bash. 
 # Get the current ACL for the file
 $acl = Get-Acl -Path "C:\path\to\your\file.txt"
