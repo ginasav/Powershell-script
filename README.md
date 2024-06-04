@@ -264,7 +264,7 @@ In questo esempio, la funzione accetta due argomenti, $larghezza e $altezza, ent
 
 Per chiamare la funzione e ottenere il valore restituito, puoi assegnare la chiamata della funzione a una variabile, in questo modo:
  ```
-$area = CalcolaAreaRettangolo -width 5 -height 10
+$area = CalcolaAreaRettangolo -larghezza 5 -altezza 10
  ```
 Ciò calcolerebbe l'area del rettangolo con una larghezza di 5 e un'altezza di 10, quindi assegnerebbe il risultato alla variabile $area.
 
